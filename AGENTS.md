@@ -30,7 +30,8 @@ flow-affiliate-pro/
 │   │   ├── tiktok-controller.ts # TikTok posting automation
 │   │   ├── shopee-controller.ts # Shopee scraping + posting
 │   │   └── lazada-controller.ts # Lazada scraping + posting
-│   ├── popup/                   # Extension popup UI (React)
+│   ├── sidepanel/               # ✅ Primary UI: Chrome Side Panel (React)
+│   ├── popup/                   # Legacy/Dev: Popup UI (React) (kept for quick actions/testing)
 │   │   ├── App.tsx              # Main app with tab navigation
 │   │   ├── pages/               # Dashboard, BulkCreator, Templates, Analytics, Settings
 │   │   └── components/          # Reusable UI components
@@ -91,6 +92,14 @@ npm run test:e2e         # E2E tests with Playwright
 npm run lint             # ESLint
 npm run type-check       # TypeScript check
 ```
+
+### Dev Workflow Notes (Important)
+
+- UI หลักของโปรเจกต์นี้คือ **Side Panel** (ไม่ใช่ popup dropdown)
+- ใน Dev Mode (CRXJS) service worker loader จะอ้าง `http://localhost:5173/...`
+   - ให้เปิด dev server ด้วย `npm run dev` ก่อน
+   - แล้วไป `chrome://extensions` → Reload extension
+- ถ้าพบปัญหา CORS ตอน dev ให้เช็คว่า Vite dev server ส่ง CORS headers แล้ว (ตั้งไว้ใน `vite.config.ts`)
 
 ---
 
