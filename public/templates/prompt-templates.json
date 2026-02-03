@@ -1,0 +1,90 @@
+{
+  "product-review": {
+    "id": "product-review",
+    "name": "Product Review",
+    "nameLocal": "รีวิวสินค้า",
+    "description": "Classic review style video showcasing product features and benefits",
+    "template": "สร้างวิดีโอรีวิวสินค้า {productName} ราคา {price} บาท\n\nจุดเด่น:\n- {features}\n\nเหมาะสำหรับ: {targetAudience}\n\nสไตล์: รีวิวแบบเป็นกันเอง ใช้ภาษาไทยที่เข้าใจง่าย มีกราฟิกประกอบ\n\nความยาว: {duration} วินาที\nอัตราส่วน: 9:16 สำหรับ TikTok",
+    "variables": ["productName", "price", "features", "targetAudience", "duration"],
+    "tags": ["review", "product", "showcase"],
+    "rating": 4.8,
+    "usageCount": 15420
+  },
+  "unboxing": {
+    "id": "unboxing",
+    "name": "Unboxing Experience",
+    "nameLocal": "แกะกล่องสินค้า",
+    "description": "Exciting unboxing video that builds anticipation",
+    "template": "สร้างวิดีโอแกะกล่องสินค้า {productName}\n\nลำดับเนื้อหา:\n1. แสดงกล่องพัสดุ\n2. เปิดกล่อง reveal สินค้า\n3. แสดงของที่มาในกล่อง\n4. First impression\n5. สรุปความคุ้มค่า\n\nราคา: {price} บาท\nสไตล์: สร้างความตื่นเต้น ใช้เสียงเอฟเฟกต์\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["unboxing", "reveal", "exciting"],
+    "rating": 4.7,
+    "usageCount": 12350
+  },
+  "deal-alert": {
+    "id": "deal-alert",
+    "name": "Deal Alert",
+    "nameLocal": "แจ้งเตือนโปรโมชั่น",
+    "description": "Urgent deal notification style video",
+    "template": "สร้างวิดีโอแจ้งเตือนโปรโมชั่น FLASH SALE!\n\nสินค้า: {productName}\nราคาปกติ: {originalPrice} บาท\nราคาลด: {price} บาท\nส่วนลด: {discount}%\n\nข้อความหลัก:\n- ลดราคาจำกัดเวลา!\n- ของมีจำนวนจำกัด\n- กดลิงก์เลยก่อนหมด!\n\nสไตล์: ด่วน! สร้างความเร่งด่วน ใช้สีแดง/ส้ม\nความยาว: {duration} วินาที (สั้นกระชับ)",
+    "variables": ["productName", "originalPrice", "price", "discount", "duration"],
+    "tags": ["deal", "sale", "urgent", "discount"],
+    "rating": 4.9,
+    "usageCount": 23100
+  },
+  "before-after": {
+    "id": "before-after",
+    "name": "Before & After",
+    "nameLocal": "ก่อน-หลัง",
+    "description": "Transformation style video showing results",
+    "template": "สร้างวิดีโอแบบ Before & After สำหรับ {productName}\n\nโครงสร้าง:\n1. แสดงปัญหา (Before)\n2. แนะนำวิธีแก้ไข (สินค้า)\n3. แสดงผลลัพธ์ (After)\n4. สรุปความเปลี่ยนแปลง\n\nราคา: {price} บาท\n\nสไตล์: เปรียบเทียบชัดเจน มี split screen\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["transformation", "before-after", "results"],
+    "rating": 4.6,
+    "usageCount": 8920
+  },
+  "comparison": {
+    "id": "comparison",
+    "name": "Product Comparison",
+    "nameLocal": "เปรียบเทียบสินค้า",
+    "description": "Side-by-side comparison video",
+    "template": "สร้างวิดีโอเปรียบเทียบ {productName} กับคู่แข่ง\n\nหัวข้อเปรียบเทียบ:\n- ราคา: {price} vs คู่แข่ง\n- คุณภาพ\n- ฟีเจอร์\n- ความคุ้มค่า\n\nสรุป: ทำไมต้องเลือกสินค้านี้?\n\nสไตล์: เปรียบเทียบตารางชัดเจน\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["comparison", "vs", "versus"],
+    "rating": 4.5,
+    "usageCount": 6540
+  },
+  "tutorial": {
+    "id": "tutorial",
+    "name": "How-to Tutorial",
+    "nameLocal": "สอนวิธีใช้",
+    "description": "Step-by-step tutorial video",
+    "template": "สร้างวิดีโอสอนใช้งาน {productName}\n\nขั้นตอน:\n1. แนะนำสินค้า\n2. เตรียมอุปกรณ์\n3. สาธิตการใช้งาน step by step\n4. เคล็ดลับการใช้\n5. สรุป\n\nราคา: {price} บาท\n\nสไตล์: สอนง่าย มีหมายเลขขั้นตอน\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["tutorial", "how-to", "guide"],
+    "rating": 4.4,
+    "usageCount": 5230
+  },
+  "lifestyle": {
+    "id": "lifestyle",
+    "name": "Lifestyle Showcase",
+    "nameLocal": "ไลฟ์สไตล์",
+    "description": "Lifestyle integration video showing product in daily life",
+    "template": "สร้างวิดีโอ Lifestyle สำหรับ {productName}\n\nแสดงการใช้สินค้าในชีวิตประจำวัน:\n- ตอนเช้า/กลางวัน/เย็น\n- ที่บ้าน/ออฟฟิศ/ข้างนอก\n- กิจกรรมต่างๆ\n\nราคา: {price} บาท\n\nสไตล์: Aesthetic, มินิมอล, โทนสีอบอุ่น\nเพลง: Lo-fi / Chill\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["lifestyle", "aesthetic", "daily"],
+    "rating": 4.7,
+    "usageCount": 9870
+  },
+  "asmr": {
+    "id": "asmr",
+    "name": "ASMR Style",
+    "nameLocal": "ASMR",
+    "description": "Satisfying ASMR video with product sounds",
+    "template": "สร้างวิดีโอ ASMR สำหรับ {productName}\n\nเสียงที่ต้องการ:\n- เสียงแกะกล่อง/ถุง\n- เสียงสัมผัสสินค้า\n- เสียงการใช้งาน\n\nไม่มีคนพูด ใช้เฉพาะเสียง ASMR\n\nราคา: {price} บาท\n\nสไตล์: Close-up shots, slow motion\nความยาว: {duration} วินาที",
+    "variables": ["productName", "price", "duration"],
+    "tags": ["asmr", "satisfying", "sounds"],
+    "rating": 4.3,
+    "usageCount": 4560
+  }
+}

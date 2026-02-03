@@ -1,0 +1,23 @@
+/* Side Panel overrides
+   - Keep all shared styling from popup globals
+   - Remove fixed popup sizing so layout can fill the side panel
+*/
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: auto;
+  min-height: 100vh;
+  max-height: none;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  overflow: hidden;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad)"/>
+  <!-- Play button triangle -->
+  <path d="M48 32L96 64L48 96V32Z" fill="white" opacity="0.9"/>
+  <!-- Flow lines -->
+  <path d="M20 40Q44 40 44 64Q44 88 68 88" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M20 64Q44 64 44 88Q44 112 68 112" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <!-- Sparkle -->
+  <circle cx="100" cy="28" r="4" fill="white"/>
+  <circle cx="108" cy="36" r="2" fill="white" opacity="0.7"/>
+</svg>
