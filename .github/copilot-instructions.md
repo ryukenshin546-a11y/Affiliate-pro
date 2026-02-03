@@ -18,7 +18,8 @@ You are working on **Flow Affiliate Pro**, a Chrome Extension (Manifest V3) for 
 
 ### Three Main Contexts
 
-1. **Popup UI** (`src/popup/`): React app running in extension popup (400x600px)
+1. **Side Panel UI** (`src/sidepanel/`): ✅ Primary UI (React) running in Chrome Side Panel
+2. **Popup UI** (`src/popup/`): Legacy/Dev UI (React). Popup sizing is applied only on `chrome-extension://...` pages.
 2. **Background Service Worker** (`src/background/`): Persistent background script handling long-running tasks
 3. **Content Scripts** (`src/content-scripts/`): Injected into Google Flow, TikTok, Shopee, Lazada pages
 
@@ -99,7 +100,15 @@ User Input (Popup)
   - Scrapes product data from product pages
   - Posts videos to Lazada Seller Center
 
-### `/src/popup/` - Extension Popup UI
+### `/src/sidepanel/` - Side Panel UI (Primary)
+
+**Purpose**: Primary UI surface for dashboard/queue/bulk/templates/analytics
+
+- `index.html`: Side panel HTML entry
+- `main.tsx`: React entry (currently reuses `src/popup/App.tsx`)
+- `styles/sidepanel.css`: CSS overrides to avoid popup-only sizing
+
+### `/src/popup/` - Extension Popup UI (Legacy/Dev)
 
 **Purpose**: User interface for creating videos and managing queue
 
@@ -321,6 +330,11 @@ npm run dev          # Vite dev server with hot reload
 npm run build        # Production build
 npm run preview      # Preview production build
 ```
+
+### Dev Mode Notes (CRXJS)
+
+- CRXJS service worker loader imports modules from `http://localhost:5173/...`
+- Vite dev server must allow cross-origin script loads from `chrome-extension://<id>` (CORS headers are configured in `vite.config.ts`)
 
 ### Testing
 ```bash
