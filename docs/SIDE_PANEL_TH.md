@@ -38,6 +38,16 @@
 3. กดไอคอน extension → ควรเปิด Side Panel
 4. ลองลากขยายให้ประมาณ 30% แล้วดูว่า UI ใช้งานได้ครบ
 
+หมายเหตุ (Dev Mode / CORS)
+
+- ใน Dev Mode (CRXJS) service worker loader จะโหลดสคริปต์จาก `http://localhost:5173/...`
+- ดังนั้นควรให้ dev server รันที่ `localhost:5173` และส่ง CORS headers (ตั้งไว้ใน `vite.config.ts` แล้ว)
+
+หมายเหตุ (Popup vs Dev Tab)
+
+- `src/popup/index.html` เวลาเปิดผ่าน dev server ในแท็บปกติ จะไม่ถูกล็อกขนาด 400x600
+- แต่เวลาเป็นหน้า extension จริง (`chrome-extension://...`) จะใส่ class `popup` อัตโนมัติ เพื่อคง sizing ของ popup
+
 ## หมายเหตุ UX
 
 - ถ้าต้องการให้ UI ดูดีที่ ~30% จริง ๆ แนะนำให้ปรับ layout บางหน้าให้เป็น 1-column เมื่อหน้าจอแคบ
