@@ -8,8 +8,8 @@
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  ┌──────────────┐         ┌──────────────────┐                 │
-│  │   POPUP UI   │◄────────│  Chrome Storage  │                 │
-│  │   (React)    │         │   (Persistent)   │                 │
+│  │   UI PANEL   │◄────────│  Chrome Storage  │                 │
+│  │ (Side Panel) │         │   (Persistent)   │                 │
 │  └──────┬───────┘         └─────────▲────────┘                 │
 │         │                            │                          │
 │         │ chrome.runtime.sendMessage │                          │
@@ -69,8 +69,8 @@
      │
      ▼
 ┌──────────────────┐
-│  Popup UI        │
-│  (Dashboard)     │
+│  UI Panel        │
+│  (Side Panel)    │
 └────┬─────────────┘
      │ 2. useVideoCreator.createVideo()
      │
@@ -139,7 +139,7 @@
      │
      ▼
 ┌──────────────────┐
-│   Popup UI       │
+│   UI Panel       │
 │   Updates        │
 └──────────────────┘
 ```
