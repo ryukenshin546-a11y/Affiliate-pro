@@ -42,6 +42,13 @@ npm run build
 # Start development server with hot reload
 npm run dev
 
+# Load extension (Dev)
+# 1. Go to chrome://extensions
+# 2. Enable "Developer mode"
+# 3. Click "Load unpacked"
+# 4. Select the `dist` folder
+# 5. Click the extension icon → Side Panel should open
+
 # Run tests
 npm test
 
@@ -64,6 +71,7 @@ flow-affiliate-pro/
 │   ├── config/             # API & app configuration
 │   ├── content-scripts/    # Platform controllers
 │   ├── hooks/              # React hooks
+│   ├── sidepanel/           # Side Panel UI (Primary UI)
 │   ├── popup/              # Popup UI
 │   │   ├── components/     # Reusable components
 │   │   ├── pages/          # Page components
@@ -94,11 +102,14 @@ VITE_LAZADA_APP_KEY=your-lazada-key
 
 ### Quick Start
 
-1. Click the extension icon to open the popup
+1. Click the extension icon to open the **Side Panel**
 2. Connect your Google Flow account
 3. Paste a product URL or enter a description
 4. Select template and settings
 5. Click "Generate" to create your video
+
+> หมายเหตุ (Dev Mode): CRXJS จะโหลดไฟล์จาก `http://localhost:5173` ใน service worker loader
+> ดังนั้นให้เข้าผ่าน `localhost` เป็นหลัก และต้องรัน `npm run dev` ก่อน แล้วค่อย Reload extension
 
 ### Batch Mode
 
